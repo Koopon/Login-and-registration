@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/coupon_main"
+    android:backgroundTint="#60000000"
+    android:backgroundTintMode="src_over">
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="JOIN US!"
+        android:textColor="#4C1B0B"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/subheading"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="START KOOPONING!"
+        android:textColor="#1E0801"
+        android:textSize="25sp"
+        android:layout_below="@+id/login"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/userNameRA"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:fontFamily="@font/montserrat_bold"
+
+        android:layout_below="@id/subheading"
+        android:layout_marginLeft="35dp"
+        android:hint="User Name"
+        android:textColorHint="#4A1A0B"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/emailRA"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:fontFamily="@font/montserrat_bold"
+
+        android:layout_below="@id/userNameRA"
+        android:layout_marginLeft="35dp"
+        android:hint="Email ID"
+        android:textColorHint="#4A1A0B"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"/>
+
+
+    <EditText
+        android:id="@+id/passRA"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/emailRA"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="35dp"
+        android:hint="Password"
+        android:textColorHint="#4C1B0C"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnRegisterRA"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/passRA"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/btnshape"
+        android:hint="Create Account"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        app:backgroundTint="#E66C61" />
+
+    <Button
+        android:id="@+id/btncreateaccount"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/btnRegisterRA"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:hint="Already have an account? Login!"
+        android:textColorHint="@color/black"
+        android:textSize="14sp"
+        app:backgroundTint="#E66C61" />
+
+
+</RelativeLayout>

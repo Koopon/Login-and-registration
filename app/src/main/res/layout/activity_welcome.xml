@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/coupon_main"
+    android:backgroundTint="#60000000"
+    android:backgroundTintMode="src_over"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="Koopon"
+        android:textColor="#4A1A0B"
+
+        android:textSize="50sp" />
+
+
+
+    <Button
+        android:id="@+id/btnSigninI"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/btnshape"
+        android:fontFamily="@font/montserrat_bold"
+
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="35dp"
+        android:hint="Start using Koopon"
+        android:textColorHint="#4A1A0B"
+        android:textSize="15sp"
+        app:backgroundTint="#E66C61"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:id="@+id/btnLoginI"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btnSigninI"
+        android:fontFamily="@font/montserrat_bold"
+
+        android:layout_margin="35dp"
+        android:layout_weight="5"
+        android:hint="Login"
+        android:textColorHint="#4A1A0B"
+        android:textSize="15sp"
+        android:background="@drawable/btnshape"
+        app:backgroundTint="#E66C61"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

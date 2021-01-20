@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/coupon_main"
+    android:backgroundTintMode="src_over"
+    android:backgroundTint="#60000000"
+    >
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="WELCOME BACK!"
+        android:textColor="#4C1B0B"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/subheading"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="GET KOOPONING!"
+        android:textColor="#1E0801"
+        android:textSize="25sp"
+        android:layout_below="@+id/login"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/emailLA"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:fontFamily="@font/montserrat_bold"
+
+        android:layout_below="@id/subheading"
+        android:layout_marginLeft="35dp"
+        android:hint="Email Id"
+        android:textColorHint="#4A1A0B"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"/>
+
+
+    <EditText
+        android:id="@+id/passLA"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/emailLA"
+        android:fontFamily="@font/montserrat_bold"
+
+        android:layout_margin="35dp"
+        android:hint="Password"
+        android:textColorHint="#4C1B0C"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnLoginLA"
+        android:background="@drawable/btnshape"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/passLA"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="35dp"
+        android:hint="Login"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        app:backgroundTint="#E66C61"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btncreateaccount"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/btnLoginLA"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:hint="Don't have an account? Create one!"
+        android:textColorHint="@color/black"
+        android:textSize="10sp"
+        app:backgroundTint="#E66C61"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
